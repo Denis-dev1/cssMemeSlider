@@ -102,7 +102,7 @@ body {
 }
 
 .slide-text p {
-  display: none;
+  /* display: none; */
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -162,4 +162,33 @@ body {
   opacity: 1;
   z-index: 1;
   transform: scale(1);
+}
+
+@media (max-width: 779px) {
+  .wrapper {
+    width: 30rem;
+  }
+
+  .wrapper .controls {
+    left: 50%;
+  }
+
+  .slide-text {
+    margin-top: 66px;
+  }
+}
+
+@media (max-width: 515px) {
+  .wrapper {
+    width: 19rem;
+  }
+
+  .wrapper .controls {
+    left: 60%;
+  }
+
+  .slide-text {
+    max-width: 16rem;
+    margin-top: 66px;
+  }
 }
