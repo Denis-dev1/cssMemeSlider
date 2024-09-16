@@ -37,19 +37,19 @@ body {
 }
 
 .slide1 {
-  background-image: url();
+  background-image: url(./img/meme1.jpeg);
   /* to ADD MEME */
 }
 .slide2 {
-  background-image: url();
+  background-image: url(./img/meme2.jpg);
   /* to ADD MEME */
 }
 .slide3 {
-  background-image: url();
+  background-image: url(./img/meme3.jpg);
   /* to ADD MEME */
 }
 .slide4 {
-  background-image: url();
+  background-image: url(./img/meme4.jpg);
   /* to ADD MEME */
 }
 
