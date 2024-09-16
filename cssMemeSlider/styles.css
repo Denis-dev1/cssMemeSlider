@@ -54,7 +54,7 @@ body {
 }
 
 .wrapper .controls {
-  left: 50%;
+  left: 90%;
   margin-left: -98px;
   position: absolute;
 }
@@ -62,15 +62,15 @@ body {
 .wrapper label {
   cursor: pointer;
   display: inline-block;
-  height: 8px;
-  margin: 25px 12px 0 16px;
-  position: relative;
-  width: 8px;
+  height: 10px;
+  margin: 20px 10px 0 16px;
+  width: 10px;
   border-radius: 50%;
+  transition: background ease-in-out 0.5s;
 }
 
 .wrapper label:after {
-  border: 2px solid #ddd;
+  border: 2px solid #3460cd;
   content: " ";
   display: block;
   height: 12px;
@@ -92,12 +92,57 @@ body {
   transition: background ease-in-out 0.5s;
 }
 
+.slide-text {
+  max-width: 32rem;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  height: 30px;
+}
+
+.slide-text p {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* текст для соответствующего слайда */
+#slide1:checked ~ .slide-text .text1 {
+  display: block;
+  opacity: 1;
+}
+
+#slide2:checked ~ .slide-text .text2 {
+  display: block;
+  opacity: 1;
+}
+
+#slide3:checked ~ .slide-text .text3 {
+  display: block;
+  opacity: 1;
+}
+
+#slide4:checked ~ .slide-text .text4 {
+  display: block;
+  opacity: 1;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4 {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+
 .wrapper label:hover,
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
 #slide3:checked ~ .controls label:nth-of-type(3),
 #slide4:checked ~ .controls label:nth-of-type(4) {
-  background: #ddd;
+  background: #8d9fcb;
 }
 
 .slides {
